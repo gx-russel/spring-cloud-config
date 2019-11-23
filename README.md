@@ -21,7 +21,7 @@
 ## 2. Config Server
 
 ### 版本 
-
+⚠⚠⚠ 
 springboot <version>2.2.1.RELEASE</version>
 
 springcloud <spring-cloud.version>Hoxton.RC2</spring-cloud.version>
@@ -175,7 +175,7 @@ eureka:
 
 
 
-这里使用到了[RabbitMQ](<https://www.rabbitmq.com) 首先保证RabbitMQ服务已经启动
+这里使用到了[RabbitMQ](https://www.rabbitmq.com) 首先保证RabbitMQ服务已经启动
 
 
 
@@ -276,7 +276,7 @@ spring:
   cloud:
     bus:
       trace:
-      	#开启监听
+        #开启监听
         enabled: true
       #代表该实例，在github刷新的时候要用到。  
       id: ${vcap.application.name:${spring.application.name:application}}:${vcap.application.instance_index:${spring.cloud.config.profile:${local.server.port:${server.port:0}}}}:${vcap.application.instance_id:${random.value}}
@@ -295,7 +295,7 @@ spring:
 
 - 其中具体配置
 
-  1.Payload URL：必须是可访问的域名！而且格式为http://域名/monitor?path=* 。在springboot2之前使用的是/bus/refresh。后来改成/actuator/bus-refresh，但是github他会附带一个payload参数，这玩意好像解析不了，会给你默认为String。然后就报错。所以要使用最新的接口/monitor，这时springCloud专门提供的。path是[官方文档](<https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.2.0.RC2/reference/html/#_push_notifications_and_spring_cloud_bus> )说你所要刷新到那个客户端，*表示所有的config-client
+  1.Payload URL：必须是可访问的域名！而且格式为http://域名/monitor?path=* 。在springboot2之前使用的是/bus/refresh。后来改成/actuator/bus-refresh，但是github他会附带一个payload参数，这玩意好像解析不了，会给你默认为String。然后就报错。所以要使用最新的接口/monitor，这时springCloud专门提供的。path是[官方文档](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.2.0.RC2/reference/html/#_push_notifications_and_spring_cloud_bus> )说你所要刷新到那个客户端，*表示所有的config-client
   2.Content type：application/json
 
 
