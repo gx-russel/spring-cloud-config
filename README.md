@@ -1,5 +1,3 @@
-# spring-cloud-config
-
 
 
 ## 1. 概况
@@ -18,7 +16,7 @@
 
 
 
-![20190602112719252](assets\20190602112719252.png)
+![20190602112719252](assets/20190602112719252.png)
 
 ## 2. Config Server
 
@@ -54,7 +52,7 @@ springcloud <spring-cloud.version>Hoxton.RC2</spring-cloud.version>
 
 ### 创建Git仓库添加配置文件
 
-![1574481123935](assets\1574481123935.png)
+![1574481123935](assets/1574481123935.png)
 
 
 
@@ -84,7 +82,7 @@ eureka:
 
 
 
-![1574481839410](assets\1574481839410.png)
+![1574481839410](assets/1574481839410.png)
 
 <http://localhost:7777/user-test.yml> 
 
@@ -101,9 +99,9 @@ eureka:
 
 还可以获取properties和json格式的
 
-![1574481896534](C:\Users\R\AppData\Local\Temp\1574481896534.png)
+![1574481896534](assets/1574481896534.png)
 
-![1574481916782](assets\1574481916782.png)
+![1574481916782](assets/1574481916782.png)
 
 注意:不管获取哪个环境的配置文件,都会把默认的配置文件拉到本地然后和其他环境的配置合并,一般把通用的配置放在默认的配置文件中 服务名.yml
 
@@ -113,7 +111,7 @@ eureka:
 
 在仓库添加user-dev.yml
 
-![1574482575504](assets\1574482575504.png)
+![1574482575504](assets/1574482575504.png)
 
 
 ### 添加依赖
@@ -144,7 +142,7 @@ eureka:
 
 
 
-![1574482390457](C:\Users\R\AppData\Local\Temp\1574482813373.png)
+![1574482390457](assets/1574482813373.png)
 
 ```yaml
 spring:
@@ -167,7 +165,7 @@ eureka:
 
 <http://localhost:8889/> 
 
-![1574482870573](assets\1574482870573.png)
+![1574482870573](assets/1574482870573.png)
 
 
 
