@@ -1,4 +1,4 @@
 env:
-  dev22
+  dev2
 server:
   port: 8889
