@@ -175,7 +175,9 @@ eureka:
 
 
 
-这里使用到了[RabbitMQ](https://www.rabbitmq.com) 首先保证RabbitMQ服务已经启动
+这里使用到了[RabbitMQ](https://www.rabbitmq.com) 
+
+👉[RabbitMQ安装](https://github.com/gx-russel/RebbitMQ)
 
 
 
