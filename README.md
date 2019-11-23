@@ -20,8 +20,8 @@
 
 ## 2. Config Server
 
-### 版本 
-⚠⚠⚠ 
+### 版本 ⚠⚠⚠ 
+
 springboot <version>2.2.1.RELEASE</version>
 
 springcloud <spring-cloud.version>Hoxton.RC2</spring-cloud.version>
