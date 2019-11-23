@@ -1,4 +1,4 @@
 env:
-  dev2
+  dev1
 server:
   port: 8889
